@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 
+// Konfigurasi paling stabil: Biarkan Prisma mencari DATABASE_URL sendiri
 const prismaClientSingleton = () => {
     return new PrismaClient();
 };
